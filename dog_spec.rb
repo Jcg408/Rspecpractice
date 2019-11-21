@@ -26,4 +26,12 @@ describe Dog do
             end
         end
     end
+
+    describe '#feed' do
+        it 'is not hungry now' do
+            subject{described_class.new(hunger: 7)}
+            subject.feed
+            expect(subject).to_not be_hungry
+        end
+    end
 end
