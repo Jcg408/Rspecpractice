@@ -11,4 +11,8 @@ class Dog
        @hunger > 5
     end
 
+    def feed
+        @hunger =0
+    end
+
 end
