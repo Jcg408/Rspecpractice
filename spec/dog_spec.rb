@@ -1,5 +1,5 @@
-require 'spec_helper'
-require_relative '../dog'
+
+require './lib/dog'
 
 RSpec.describe Dog do    
     # subject {Dog.new} - Rspec automatically defines the subject to match the class.       
