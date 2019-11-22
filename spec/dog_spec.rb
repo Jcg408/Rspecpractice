@@ -1,7 +1,7 @@
-require 'rspec'
-require_relative 'dog'
+require 'spec_helper'
+require_relative '../dog'
 
-describe Dog do    
+RSpec.describe Dog do    
     # subject {Dog.new} - Rspec automatically defines the subject to match the class.       
     describe '#bark' do
         it 'returns "Woof!"' do
