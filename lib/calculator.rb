@@ -1,18 +1,24 @@
 class Calculator
-
-    def add (a,b, c=0)
-     a + b + c
+    
+    def initialize(a, b, c=0)
+        @a = a;
+        @b = b;
+        @c = c
     end
 
-    def multiply(a,b)
-        a * b 
+    def add 
+    @a + @b + @c
     end
 
-    def subtract (a,b)
-        a - b
+    def multiply
+        @a * @b 
     end
 
-    def divide (a,b)
-        a / b 
+    def subtract
+        @a - @b
+    end
+
+    def divide
+        @a / @b 
     end
 end
